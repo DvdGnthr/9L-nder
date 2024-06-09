@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the container is centered vertically */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; /* Use 100% width to be responsive */
+    max-width: 960px; /* Maximum width to fit 3 items per row */
+}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px; /* General padding */
+    padding-top: 30px; /* Extra padding at the top */
+    padding-bottom: 30px; /* Extra padding at the bottom */
+    background-color: rgb(182, 143, 245);
+    border-style: solid;
+    border-radius: 2.2em;
+    border-width: 10px;
+    border-color: rgb(43, 43, 43);
+    width: calc(33.333% - 20px); /* Adjust width to fit 3 items per row */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    color: rgb(129, 255, 238);
+}
+
+@media (max-width: 340px) {
+    #a, #b, #c, #d, #e, #f, #g, #h, #i {
+        font-size: 0.6em;
+    }
+
+}
+
+#Link {
+    color: rgb(129, 255, 238);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#Link:hover {
+    color: rgb(255, 208, 0);
+}
